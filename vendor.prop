@@ -294,3 +294,7 @@ vendor.sys.video.disable.ubwc=1
 
 # Zygote
 zygote.critical_window.minute=10
+
+# USB
+vendor.usb.product_string=Poco X5 Pro
+ro.usb.uvc.enabled=true
