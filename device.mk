@@ -144,19 +144,16 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    android.hardware.graphics.common-V4-ndk \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor \
-    libcamera2ndk_vendor \
-    libcamera_metadata.vendor \
-    libion.vendor \
-    libexif.vendor \
-    libgui_vendor \
-    libyuv.vendor
+    vendor.qti.hardware.camera.postproc@1.0.vendor\
+    libutilscallstack.vendor
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
     libmegface\
+    liblz4.vendor
+
+PRODUCT_PACKAGES += \
     liblz4.vendor
 
 PRODUCT_COPY_FILES += \
@@ -498,6 +495,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libssl.vendor
+<<<<<<< HEAD
+=======
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+>>>>>>> 4e1da77 (redwood: Build missing libraries for 14 QPR3)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
@@ -527,8 +530,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcurl.vendor \
+    libjsoncpp \
     libjsoncpp.vendor \
-    libsqlite.vendor
+    libsqlite \
+    libsqlite.vendor \
+    libutilscallstack \
+    libutilscallstack.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -656,3 +663,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+PRODUCT_PACKAGES += \
+    libpng.vendor
