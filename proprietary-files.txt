@@ -1,4 +1,5 @@
-# All unpinned blobs below are extracted from redwood_global-user 14 UKQ1.231003.002 V816.0.3.0.UMSMIXM release-keys
+
+# All unpinned blobs below are extracted from redwood V816.0.4.0.UMSMIXM
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
