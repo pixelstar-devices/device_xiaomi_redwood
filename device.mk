@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libMegviiFacepp-0.5.2 \
-    libmegface
+    libmegface\
     liblz4.vendor
 
 PRODUCT_COPY_FILES += \

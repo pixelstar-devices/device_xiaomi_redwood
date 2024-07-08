@@ -11,15 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from redwood device
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
-# Inherit some common lineage stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 SAKURA_MAINTAINER := RDX463
+SAKURA_OFFICIAL := true
 TARGET_BOOT_ANIMATION_RES := 1080
 SAKURA_BUILD_TYPE := gapps
 TARGET_ENABLE_BLUR := true
 
-PODUCT_DEVICE := redwood
+PRODUCT_BRAND := POCO
+PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 22101320G
 PRODUCT_NAME := lineage_redwood
