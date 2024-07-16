@@ -495,12 +495,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libssl.vendor
-<<<<<<< HEAD
-=======
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
->>>>>>> 4e1da77 (redwood: Build missing libraries for 14 QPR3)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
