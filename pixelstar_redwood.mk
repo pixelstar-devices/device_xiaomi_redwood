@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := false
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
 
